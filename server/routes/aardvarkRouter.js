@@ -7,9 +7,10 @@ var config = {
     host: 'localhost', // where is the database?
     port: 5432, // the port number of the database, 5432 is the default
     max: 10, // how many connections at one time
-    idleTimeoutMillis: 30000 // close idle connections to db after 3 seconds
+    idleTimeoutMillis: 30000 // close idle connections to db after 30 seconds
 }
 
+// create our pool
 var pool = new pg.Pool(config);
 
 
